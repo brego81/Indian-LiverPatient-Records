@@ -22,7 +22,14 @@ Any patient whose age exceeded 89 is listed as being of age "90".
 - Dataset: field used to split the data into two sets (patient with liver disease, or no disease) [TARGET]
 
 ### Target definition
-Assuming 1=no disease and 2=disease, mapping the below
+To properly set the target variable we sugget to:
+
+  1 = no disease --> 0
+  
+  2 = disease    --> 1
 ```
+import pandas as pd
+data = pd.read_csv('https://raw.githubusercontent.com/brego81/Indian-LiverPatient-Records/main/indian_liver_patient.csv')
 data.Dataset = data.Dataset.map({1:0, 2:1})
+data.head(20)
 ```
