@@ -1,4 +1,4 @@
-# Indian-LiverPatient-Records
+# Indian-Liver-Patient-Records
 A binary classification probelm
 ### credits https://www.kaggle.com/uciml/indian-liver-patient-records
 
